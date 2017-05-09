@@ -1,8 +1,9 @@
 
+var HTMLContent;
 var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
 
 document.getElementById('timer').innerHTML =
-  03 + ":" + 00;
+  05 + ":" + 00;
 startTimer();
 
 function countDown(mins, secs) {
@@ -19,7 +20,7 @@ function countDown(mins, secs) {
 }
 
 function checkSecond(sec) {
-  if (sec < 10 && sec >= 0) {sec = "0" + sec}; // add zero in front of numbers < 10
+  if (sec < 10 && sec >= 0) {sec = "0" + sec}; 
   if (sec < 0) {sec = "59"};
   return sec;
 }
