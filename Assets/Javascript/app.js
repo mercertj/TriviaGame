@@ -5,6 +5,7 @@ var secs = secs;
 var timer;
 
 var startGame = function() {
+ 
 
   $("#start").click(countDown);
 function countDown(mins, secs) {
@@ -23,7 +24,7 @@ function countDown(mins, secs) {
     alert("Time's Up!")
     m = 3;
     s = 00;
-    document.get(ElementById)("timer").innerHTML =
+    document.get(ElementById)("#timer").innerHTML =
     m + ":" + s;
     return; 
   }
@@ -68,7 +69,7 @@ quiz.prototype.getQuestionIndex = function() {
 }
 
 quiz.prototype.isEnded = function() {
-  return this.questions.length === this.QuestionIndex;
+  return this.questions.length === this.questionIndex;
 }
 
 quiz.prototype.guess = function(answer) {
@@ -134,6 +135,11 @@ function countDown(mins, secs) {
     m + ":" + s;
     return; 
   }
+  function checkSecond(sec) {
+    if (sec < 10 && sec >= 0) {sec = "00" + sec}; 
+    if (sec < 0) {sec = "59"};
+    return sec;
+    }
 
    setTimeout(countDown, 1000);
 }
@@ -146,19 +152,15 @@ function countDown(mins, secs) {
 
 // }
 
-function checkSecond(sec) {
-  if (sec < 10 && sec >= 0) {sec = "00" + sec}; 
-  if (sec < 0) {sec = "59"};
-  return sec;
-    }
+
 
 // $("#qndastuff").click(questions);
 // function displayQuestions() {
 //     var questions = new Array 
    
 
-}
-}
+  };
+};
 
 
 
