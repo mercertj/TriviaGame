@@ -3,6 +3,16 @@ body {
 
 }
 
+html {
+	background: url(https://images.pexels.com/photos/110874/pexels-photo-110874.jpeg?w=940&h=650&auto=compress&cs=tinysrgb) no-repeat center center fixed;
+	background-size: cover;
+}
+#subwrapper {
+	background: none;
+}
+#title {
+	background: none;
+}
 .grid {
 	
 	width: 600px;
@@ -13,12 +23,30 @@ body {
 	border-radius: 50px;
 	border: 2px solid #cbcbab;
 	box-shadow: 10px 15px 5px #cbcbab;
-	/*text-align: center;
+	text-align: center;
 	height: 100px;
 	margin: auto;
 	padding-top: 30px;
 	color: orange;
-	background: brown;*/
+	background: brown;
+}
+
+#title {
+	color: black;
+	font-family: cursive;
+	text-align: center;
+	
+}
+div {
+	text-align: center;
+}
+
+#start {
+	color: white;
+	font-size: 20px;
+	background: darkslategrey;
+	text-align: center;
+
 }
 
 .grid h1 {
@@ -78,11 +106,4 @@ h4 {
 
 }
 
-#start {
-	color: green;
-	font-size: 20px;
-	background: grey;
-	text-align: center;
-
-}
 
